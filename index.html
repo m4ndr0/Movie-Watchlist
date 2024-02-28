@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Movie Watchlist</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <div class="upper-text">
+                <h1 id="test">Find your film</h1>
+                <h3><a href="my_watchlist.html">My Watchlist</a></h3>
+            </div>
+            <div class="input-and-btn-container">
+            <input 
+            type="text" 
+            id="movie-search-field" 
+            name="movie-search-field" 
+            placeholder="search a movie..."
+            >
+            <button class="search-btn" id="search-btn">SEARCH</button>
+            </div>
+        </header>
+        <main id="main">
+            <!--Once the search BTN has been triggered, the film list will display here-->
+            <div id="film-icon-container">
+                <span class="material-symbols-outlined">
+                    movie
+                    </span>
+                <h3>Start exploring</h3>
+            </div>
+        </main>
+        <span class="added-msg" id="added-msg">Added to watchlist</span>
+        <span class="not-fount-msg" id="not-fount-msg">Can't find this movie</span>
+        <footer></footer>
+    </div>
+    <script src="/java/index.js"></script>
+</body>
+</html>
